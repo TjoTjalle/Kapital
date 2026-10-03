@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kapital</title>
+    <style>
+      :root {
+        --bg: #0c1320;
+        --card: #111d2f;
+        --text: #edf6ff;
+        --muted: #a8bfd5;
+        --accent: #3ad0b6;
+        --accent-2: #6ab8ff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(145deg, #09121d, #162d43 60%, #0a1622);
+        color: var(--text);
+        font-family: Arial, sans-serif;
+      }
+      .card {
+        width: min(92vw, 560px);
+        background: rgba(17, 29, 47, 0.9);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 18px;
+        padding: 32px 24px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 5vw, 3rem);
+      }
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .pill {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        color: #06151d;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Kapital</h1>
+      <p>Det här är en enkel fungerande GitHub Pages-sida som visar att deployen fungerar.</p>
+      <div class="pill">GitHub Pages fungerar</div>
+    </main>
+  </body>
+</html>
